@@ -1,55 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Loans</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="header container">
-            <a href="#" class="header__logo">Loans.com</a>
-            <nav>
-                <ul class="header__nav">
-                    <li class="nav__element"><a href="#">Rates & Fees</a></li>
-                    <li class="nav__element"><a href="#">How to apply</a></li>
-                    <li class="nav__element"><a href="#">Questions?</a></li>
-                </ul>
-            </nav>
+      <a href="#" class="header__logo">Loans.com</a>
+      <nav>
+        <ul class="header__nav">
+          <li class="nav__element"><a href="#">Rates & Fees</a></li>
+          <li class="nav__element"><a href="#">How to apply</a></li>
+          <li class="nav__element"><a href="#">Questions?</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main container">
-        <section class="main__intro">
-            <div class="intro__info">
-                <p class="intro__above-heading">Personal Loan</p>
-                <h1 class="intro__heading">Put your plans into actions.</h1>
+      <section class="main__intro">
+        <div class="intro__info">
+          <p class="intro__above-heading">Personal Loan</p>
+          <h1 class="intro__heading">Put your plans into actions.</h1>
 
-                <div class="intro__features">
-                    <div class="intro__icon">
-                        <span class="icon__text">Online application</span>
-                    </div>
-                    <div class="intro__icon">
-                        <span class="icon__text">Up to $50.000</span>
-                    </div>
-                    <div class="intro__icon">
-                        <span class="icon__text">The money is yours in 48h</span>
-                    </div>
-                </div>
+          <div class="intro__features">
+            <div class="intro__icon">
+              <span class="icon__text">Online application</span>
             </div>
-            <div class="intro__form">
-                <h2 class="form__heading">Let's change your life?</h2>
-                <form>
+            <div class="intro__icon">
+              <span class="icon__text">Up to $50.000</span>
+            </div>
+            <div class="intro__icon">
+              <span class="icon__text">The money is yours in 48h</span>
+            </div>
+          </div>
+        </div>
+        <div class="intro__form">
+          <h2 class="form__heading">Let's change your life?</h2>
+          <form>
+            <div class="form__field">
+              <label for="name">Full name</label>
+              <input type="text" class="form__input" id="name" placeholder="John Doe" />
+            </div>
 
-                </form>
+            <div class="form__field">
+              <label for="email">E-mail</label>
+              <input type="email" class="form__input" id="email" placeholder="john.doe@apple.com" />
             </div>
-        </section>
+
+            <div class="form__field">
+              <label for="amount">How much do you need?</label>
+              <input type="number" class="form__input" id="amount" placeholder="1.000" />
+            </div>
+
+            <button type="submit" class="form__button">Check your rates</button>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
